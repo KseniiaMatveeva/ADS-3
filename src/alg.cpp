@@ -6,7 +6,7 @@ int cbinsearch(int *arr, int size, int value) {
   int i = 0, j = size - 1;
   while (i < j) {
     if (arr[i] == value && arr[j] == value) {
-      count = j - i + 1;
+      count += j - i + 1;
       return count;
     }
     int mid = i + (j - i) / 2;
