@@ -11,11 +11,6 @@ int cbinsearch(int *arr, int size, int value) {
     }
     int mid = i + (j - i) / 2;
     if (arr[mid] == value) {
-      //for (int k = i; k < j; k++) {
-        //if (arr[k] == value) {
-          //count++;
-         //}
-      //}
       count++;
       while (arr[mid - 1] == value) {
           count++;
@@ -33,5 +28,4 @@ int cbinsearch(int *arr, int size, int value) {
       }
   }
   return count;
-  //return 0;
 }
